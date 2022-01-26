@@ -1,0 +1,664 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+@import url(./normalize.css);
+
+@font-face {
+    font-family: Folded;
+    src: url(../fonts/folded-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: Moderne;
+    src: url(../fonts/ModerneLLWeb-Medium.woff2);
+}
+
+.cabecera{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 700px){
+    .cabecera{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.divlogo{
+    margin: 20px 20px;
+}
+
+.cabmenu1{
+    font-family: Moderne;
+    color: #000;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.pevedown{
+    color: #FF0000;
+}
+
+.cabmenu1 div{
+    margin: 10px 50px;
+}
+
+#news:hover{
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
+
+#eveaca:hover{
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
+
+#evestore:hover{
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
+
+#everecruit:hover{
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
+
+#evesupport:hover{
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
+
+#evedown:hover{
+    border-bottom: 3px solid red;
+    cursor: pointer;
+}
+
+.cabmenu2{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.cabmenu2 div{
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#input1{
+    height: 20px;
+    width: 150px;
+    margin: auto 20px;
+}
+
+.cabmenu2 div i{
+    margin: auto;
+}
+
+.cabmenu2 p{
+    margin: auto;
+}
+
+.evelogin{
+    color: yellow;
+}
+
+.evelogin:hover{
+    cursor: pointer;
+}
+
+.evelang:hover{
+    cursor: pointer;
+}
+
+.fa-shopping-basket{
+    color: black;
+}
+
+.fa-shopping-basket:hover{
+    cursor: pointer;
+}
+
+.parte1{
+    height: auto;
+    width: auto;
+    background-image: url(../img/background-1.avif);
+    background-position: center;
+}
+
+.contparte1{
+    padding-top: 50px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titnum1{
+    color: white;
+    font-family: Moderne;
+    font-size: 30px;
+    background-color: rgba(21, 21, 21, 0.5);
+    padding: auto;
+}
+
+.titnum2{
+    color: white;
+    font-family: Moderne;
+    font-size: 20px;
+}
+
+.buttons1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 700px){
+    .buttons1{
+        width: 450px;
+        height: 250px;
+    }
+}
+
+.bplaynow{
+    margin: 0 30px;
+    color: #000;
+    display: inline-block;
+    height: 180px;
+    width: 200px;
+    background-color: #FFF;
+    clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.pbplaynow{
+    font-family: Moderne;
+}
+
+.bplaynow:hover{
+    cursor: pointer;
+}
+
+.bgetomega{
+    margin: 0 30px;
+    color: #000;
+    display: inline-block;
+    height: 180px;
+    width: 200px;
+    background-color: #FFF;
+    clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.bgetomega:hover{
+    cursor: pointer;
+}
+
+.pbplaynow{
+    padding: 60px 0;
+    color: black;
+    font-size: 20px;
+    font-family: Moderne;
+    text-align: center;
+}
+
+.pbgetomega{
+    padding: 60px 0;
+    color: black;
+    font-size: 20px;
+    font-family: Moderne;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.parte2{
+    padding-top: 1px;
+    background-image: url(../img/bg-univers.jpg);
+}
+
+.contparte2{
+    padding-top: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "cap1 cap2 cap3 cap4"
+    "cap5 cap6 cap7 cap8";
+    row-gap: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 700px){
+    .contparte2{
+        grid-template-areas: 
+        "cap1"
+        "cap2"
+        "cap3"
+        "cap4"
+        "cap5"
+        "cap6"
+        "cap7"
+        "cap8";
+        
+        margin-left: 50px;
+    }
+}
+
+
+.cap1{
+    grid-area: cap1;
+    width: 350px;
+    height: 500px;
+}
+
+.cap1 img{
+    width: 350px;
+    height: 400px;
+}
+
+.pnom1cap1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom2cap1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom3cap1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.cap2{
+    grid-area: cap2;
+    width: 350px;
+    height: 500px;
+}
+
+.cap2 img{
+    width: 350px;
+    height: 400px;
+}
+
+.pnom1cap2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom2cap2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom3cap2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.cap3{
+    grid-area: cap3;
+    width: 350px;
+    height: 500px;
+}
+
+.cap3 img{
+    width: 350px;
+    height: 400px;
+}
+
+.pnom1cap3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom2cap3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom3cap3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.cap4{
+    grid-area: cap4;
+    width: 350px;
+    height: 500px;
+}
+
+.cap4 img{
+    width: 350px;
+    height: 400px;
+}
+
+.pnom1cap4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom2cap4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom3cap4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.cap5{
+    grid-area: cap5;
+    width: 350px;
+    height: 500px;
+}
+
+.cap5 img{
+    width: 350px;
+    height: 400px;
+}
+
+.pnom1cap5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom2cap5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom3cap5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.cap6{
+    grid-area: cap6;
+    width: 350px;
+    height: 500px;
+}
+
+.cap6 img{
+    width: 350px;
+    height: 400px;
+}
+
+.pnom1cap6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom2cap6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom3cap6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.cap7{
+    grid-area: cap7;
+    width: 350px;
+    height: 500px;
+}
+
+.cap7 img{
+    width: 350px;
+    height: 400px;
+}
+
+.pnom1cap7{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom2cap7{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom3cap7{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.cap8{
+    grid-area: cap8;
+    width: 350px;
+    height: 500px;
+}
+
+.cap8 img{
+    width: 350px;
+    height: 400px;
+}
+
+.pnom1cap8{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom2cap8{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    height: 3px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pnom3cap8{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 10 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(223, 223, 223);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+.pcopy{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.imgpais{
+    height: 24px;
+    width: auto;
+}
+
+.icos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icos i{
+    width: 24px;
+    height: auto;
+}
+
+.idiomapais{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
